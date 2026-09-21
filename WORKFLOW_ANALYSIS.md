@@ -1,15 +1,16 @@
-Q: What triggers this workflow to run? (Look at the on: section)
-A: A push or pull request on main.
-Q: What are the four main steps this workflow performs? (List each step name)
-A:  Step 1: Get the code from the repository
-    Step 2: Validate HTML files
-    Step 3: Check for broken links
-    Step 4: Upload the built site for deployment
-Q: What does the "Checkout code" step do and why is it necessary?
-A: It downloads my code. It is necessary because it pulls the code it needs to run the workflow/
-Q: What is the purpose of the environment configuration?
-A: Because it tells workflow to deploy on GitHub pages environment.
-Q: How does this automated deployment improve reliability compared to manual deployment?
-A:  It reduces the chances of possible human error when deploying code
-Q: What would happen if you pushed code to a different branch (not main)?
-A: This workflow would not run. My code would not be deployed. It would just updated that branch I pushed the code to
+- Q: What triggers this workflow to run? (Look at the on: section)
+    - A: A push or pull request on main.
+- Q: What are the four main steps this workflow performs? (List each step name)
+    - A:
+         - Step 1: Get the code from the repository
+         - Step 2: Validate HTML files
+         - Step 3: Check for broken links
+         - Step 4: Upload the built site for deployment
+- Q: What does the "Checkout code" step do and why is it necessary?
+    - A: It downloads my code. It is necessary because it pulls the code it needs to run the workflow.
+- Q: What is the purpose of the environment configuration?
+    - A: Because it tells the workflow to deploy on GitHub pages environment.
+- Q: How does this automated deployment improve reliability compared to manual deployment?
+    - A:  It reduces the chances of possible human error when deploying code.
+- Q: What would happen if you pushed code to a different branch (not main)?
+  - A: This workflow would not run. My code would not be deployed. It would just updated that branch I pushed the code to.
